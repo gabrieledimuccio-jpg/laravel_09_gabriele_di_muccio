@@ -26,7 +26,7 @@ return redirect()->back();
 }
 
 public function index(){
-
-return view('product.index');
+$people = Person::all();
+return view('product.index', ['people'=>$people]);
 }
 }

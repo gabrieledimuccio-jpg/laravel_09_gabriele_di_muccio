@@ -19,4 +19,4 @@ Route::get('/articoli/{title}',[DettagliController::class, 'articoli'])->name('a
 Route::post('/product/create', [IscrizioneController::class, 'registration'])->name('registration.point');
 
 
-Route::post('/product/index', [IscrizioneController::class, 'index'])->name('product.index');
+Route::get('/product/index', [IscrizioneController::class, 'index'])->name('product.index');
